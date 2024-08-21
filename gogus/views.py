@@ -2,6 +2,8 @@ from rest_framework import viewsets
 from .serializers import PessoaFisicaSerializer, PessoaJuridicaSerializer, EnderecoSerializer, TelefoneSerializer
 from .models import PessoaFisica, PessoaJuridica, Endereco, Telefone
 
+# comentários adicionados em teste
+
 class PessoaFisicaViewSet(viewsets.ModelViewSet):
     queryset = PessoaFisica.objects.all()
     serializer_class = PessoaFisicaSerializer
